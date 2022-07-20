@@ -24,8 +24,6 @@ cd route-table-analysis
     - [groups.yaml](inventory/groups.yaml)
     - [hosts.yaml](inventory/hosts.yaml)
 
-See the [Inventory Setup](#inventory-setup) below for more detailed instructions
-
 3) Create the virtual environment to run the application in:
 
 ```console
