@@ -1,0 +1,67 @@
+---
+
+spine1-nxos:
+    hostname: 172.29.151.1
+    platform: 'nxos'
+    username: lab
+    password: Nebula2021
+    groups:
+        - cisco_nxos
+
+spine2-nxos:
+    hostname: 172.29.151.2
+    platform: 'nxos'
+    username: lab
+    password: Nebula2021
+    groups:
+        - cisco_nxos
+
+leaf1-ios:
+    hostname: 172.29.151.3
+    platform: 'ios'
+    username: lab
+    password: Nebula2021
+    groups:
+        - cisco_ios
+
+leaf2-ios:
+    hostname: 172.29.151.4
+    platform: 'ios'
+    username: lab
+    password: Nebula2021
+    groups:
+        - cisco_ios
+
+leaf3-qfx:
+    hostname: 172.29.151.5
+    platform: 'junos'
+    username: lab
+    password: Nebula2021
+    groups:
+        - juniper_junos
+
+leaf4-qfx:
+    hostname: 172.29.151.6
+    platform: 'junos'
+    username: lab
+    password: Nebula2021
+    groups:
+        - juniper_junos
+
+leaf5-eos:
+    hostname: 172.29.151.7
+    platform: 'eos'
+    username: lab
+    password: Nebula2021
+    groups:
+        - arista_eos
+
+leaf6-eos:
+    hostname: 172.29.151.8
+    platform: 'eos'
+    username: lab
+    password: Nebula2021
+    groups:
+        - arista_eos
+
+
