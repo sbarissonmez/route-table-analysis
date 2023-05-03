@@ -29,7 +29,7 @@ my_list = []
 
 def get_routes(task):
     """
-    Parse routing table and determine if target IP finds a match
+    Analyze the routing table and determine if the destination IP finds a match
     """
     response = task.run(task=send_command, command="show ip route")
     task.host["facts"] = response.scrapli_response.genie_parse_output()
@@ -44,7 +44,7 @@ def get_routes(task):
                     for intf in outgoing_intf:
                         exit_intf = intf
                         my_list.append(
-                            f"{task.host} is connected to {target} via interface {exit_intf}"
+                            f"{task.host} is linked to {target} through interface {exit_intf}"
                         )
                 except KeyError:
                     pass
@@ -56,7 +56,7 @@ def get_routes(task):
                         exit_intf = next_hop_list[key]["outgoing_interface"]
                         my_list.append(
                             (
-                                f"{task.host} can reach {target} via interface {exit_intf}"
+                                f"{task.host} can communicate {target} through interface {exit_intf}"
                                 f" ~~ next hop: {next_hop} ({source_proto})"
                             )
                         )
