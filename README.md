@@ -1,62 +1,9 @@
 # Route Table Analysis Toolkit #
 
-By using this toolkit, you will be able to parse routing table and determine if target IP find a match 
+With the help of this toolkit, it is possible to extract routing table information and check if a specified target IP matches any of the prefixes. This can be accomplished by parsing the routing table of each device using the Scrapli library, and then iterating through the prefixes to find a match. If a match is found, the script will determine the interface through which the target IP is reachable, as well as the next hop information. Finally, the script will display the result in a user-friendly format.
 
 ![screenshot](./screenshots/example-1.png)
 
 ![screenshot](./screenshots/example-2.png)
 
 ![screenshot](./screenshots/example-3.png)
-
-## Installation ##
-
-To install the toolkit and the associated modules, please perform the following from within your virtual environment:  
-
-1) Clone the repository to the machine on which you will run the application from:
-
-```git
-git clone https://github.com/sbarissonmez/route-table-analysis.git
-cd route-table-analysis
-```
-
-2) Populate your Nornir inventory files:
-
-    - [groups.yaml](inventory/groups.yaml)
-    - [hosts.yaml](inventory/hosts.yaml)
-
-3) Create the virtual environment to run the application in:
-
-```console
-virtualenv --python=`which python3` venv
-source venv/bin/activate
-```
-4) Install the requirements:
-
-***Language :***
-```
-Python3.8+
-```
-
-***Library :***
-
-```python
-pip install -r requirements.txt
-```
-
-requirements.txt
-```
-nornir
-nornir_scrapli
-rich
-genie
-pyats
--r requirements-genie.txt
-```
-
-requirements-genie.txt
-```
-genie>=20.2 ; sys_platform != "win32" and python_version < "3.10"
-pyats>=20.2 ; sys_platform != "win32" and python_version < "3.10"
-```
-
-
