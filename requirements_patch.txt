@@ -1,0 +1,5 @@
+nornir>=3.0.0
+nornir-scrapli>=0.6.0
+rich>=10.0.0
+genie>=23.6
+pyats>=23.6
