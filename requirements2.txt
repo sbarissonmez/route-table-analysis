@@ -1,6 +1,0 @@
-nornir
-nornir_scrapli
-rich
-genie
-pyats
--r requirements-genie.txt
